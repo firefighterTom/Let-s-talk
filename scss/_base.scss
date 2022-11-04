@@ -1,0 +1,42 @@
+$color-primary: #c69963;
+$color-primary-dark: #B28451;
+
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+$color-secondary:#101d2c;
+// FONT VARIABLES
+// font-family: 'Goblin One', cursive;
+// font-family: 'Playfair Display', serif;
+$font-logo: 'Goblin One', cursive;
+$font-title: 'Playfair Display', serif;
+
+$font-size-small:20px;
+
+
+
+$bp-largest:75em;
+$bp-large:62.5em;
+$bp-medium:50em;
+$bp-small:37.5em;
+
+
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+   
+    font-size:62.5%;
+  
+}
