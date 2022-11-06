@@ -1,27 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Talk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Playfair+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-<header>
-    <div class="hero-shadow"></div>
-    <div class="hero-text">
-        <h1 class="logo-text">Let's <span>talk</span></h1>
-        <h2 class="heading-text">Here you can practise your speaking</h2>
+    <div class="navigation">
+        <div class="burger-icon">
+            <div class="btn-burger open"></div>
+        </div>
+        <div class="background-navigation"></div>
+        <nav>
+            <ul class="navigation-list">
+                <li class="navigation-item"><a href="#" class="navigation-link">home</a></li>
+                <li class="navigation-item"><a href="#languages" class="navigation-link">Languages</a></li>
+                <li class="navigation-item"><a href="#examples" class="navigation-link">Examples</a></li>
+                <li class="navigation-item"><a href="#contact" class="navigation-link">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-    <button class="button-header">See more</button>
+    <header>
 
-</header>
+        <div class="hero-shadow"></div>
+        <div class="hero-text">
+            <h1 class="logo-text">Let's <span>talk</span></h1>
+            <h2 class="heading-text">Here you can practise your speaking</h2>
+        </div>
+        <a href="#languages" class="button-header">See more</a>
 
+    </header>
+    <main>
+        <section id="languages" class="languages">
+            <div class="title-box">
+                <h2 class="title">Languages</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="box-with-all-flags">
+                <div class="box-flag">
+                    <img src="./img/united-kingdom.png" alt="flag of United Kingdom" class="img-flag">
+                    <p class="language-name">English</p>
+                </div>
+                <div class="box-flag">
+                    <img src="./img/germany.png" alt="flag of Germany" class="img-flag">
+                    <p class="language-name">German</p>
+                </div>
+                <div class="box-flag">
+                    <img src="./img/poland.png" alt="flag of Poland" class="img-flag">
+                    <p class="language-name">Polish</p>
+                </div>
+            </div>
+        </section>
+        <section id="examples" class="examples">
+            <div class="title-box">
+                <h2 class="title">Examples</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="box-tv">
+                <div class="tv-screen">
+                    <img src="https://www.thebalancecareers.com/thmb/8-WCC-OYjKDX6eQhLQGkYYO_DrY=/2667x2000/smart/filters:no_upscale()/job-interview-questions-and-answers-2061204-Final-edit-3c00ddccd27146ee877c178884cea990.jpg"
+                        alt="job-interview" class="tv-img interview-img active-img">
+                    <img src="./img/coming soon.jpg" alt="booking hotel" class="tv-img hotel-img">
+                    <img src="./img/nextOne.jpg"
+                        alt="ordering-food" class="tv-img ordering-img">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2d36a7f-7ca4-4858-b311-2c23ee271452/da7zqh1-a6c5d16f-dbf0-4fd5-b4e2-be49a33907aa.jpg/v1/fill/w_1024,h_576,q_75,strp/never_gonna_give_you_up__4k__by_thegoldenbox_da7zqh1-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvZTJkMzZhN2YtN2NhNC00ODU4LWIzMTEtMmMyM2VlMjcxNDUyXC9kYTd6cWgxLWE2YzVkMTZmLWRiZjAtNGZkNS1iNGUyLWJlNDlhMzM5MDdhYS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.VN10hQ289UL37FM_G4tyUNhnnB7ll5Nh--G1MZ7gxSg"
+                        alt="calling for 911" class="tv-img emergency-img">
+                </div>
+                <div class="remote">
+                    <i class="ti ti-power power-icon"></i>
+                    <button class="remote-btn interview-btn active-btn">Job interview</button>
+                    <button class="remote-btn booking-btn">Booking hotel</button>
+                    <button class="remote-btn ordering-btn">Ordering food</button>
+                    <button class="remote-btn emergency-btn">Calling for 911</button>
+                </div>
+            </div>
+
+        </section>
+        <section id="contact" class="contact">
+            <div class="title-box">
+                <h2 class="title">Contact</h2>
+                <div class="underline"></div>
+            </div>
+         <div class="container">
+            <div class="img-box">
+             <div class="pos-img">
+                <img src="./img/cartoon-man-transparent-9.png" alt="Greeting man" class="img-man">
+                <p class="encourage-to-contact">Feel free to ask.</p>
+            </div>
+        </div>
+          
+                <form class="box-form">
+                    <label for="Name" >Name</label>
+                    <input id='Name'type="text" placeholder="Name">
+                    <label for="Email">Email</label>
+                    <input id="Email" type="text" placeholder="Email">
+                    <label for="Message">Message</label>
+                    <textarea id="Message" placeholder="Wirte a message"></textarea>
+                    <button class="btn-send">Send</button>
+
+                </form>
+         
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="logo-text">Let's <span>talk</span></p>
+        <div class="icons-box">
+          <a href="https://www.facebook.com/" class="icon-footer">  <i class="ti ti-brand-facebook"></i></a>
+          <a href="https://www.instagram.com/" class="icon-footer"> <i class="ti ti-brand-instagram"></i></a>
+            <a href=" https://twitter.com/?lang=pl" class="icon-footer">  <i class="ti ti-brand-twitter"></i></a>
+        </div>
+        <p class="footer-text">Copyright © 2022 by rolinskistudio, Inc. All rights reserved.</p>
+      </footer>
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>

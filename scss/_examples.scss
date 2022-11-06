@@ -1,0 +1,129 @@
+.examples {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 80px;
+
+	.box-tv {
+		margin-top: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 100px;
+		@media (min-width: $bp-medium) {
+			width: 100%;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+		}
+		@media (min-width: $bp-large) {
+			justify-content: center;
+			gap: 150px;
+		}
+		.tv-screen {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: black;
+			width: 200px;
+			padding: 20px;
+			// margin: 0 20px;
+
+			@media (min-width: 300px) {
+				width: 280px;
+			}
+			@media (min-width: $bp-small) {
+				width: 480px;
+			}
+			@media (min-width: $bp-large) {
+				width: 680px;
+			}
+			.tv-img {
+				display: none;
+				width: 180px;
+				height: 200px;
+				@media (min-width: 300px) {
+					width: 250px;
+				}
+				@media (min-width: $bp-small) {
+					width: 460px;
+				}
+				@media (min-width: $bp-large) {
+					width: 600px;
+					height: 260px;
+				}
+			}
+            .active-img{
+                display: block;
+            }
+		}
+		.tv-screen::after {
+			content: '';
+			position: absolute;
+			bottom: -20%;
+			background-color: black;
+			width: 30px;
+			height: 60px;
+		}
+		.tv-screen::before {
+			content: '';
+			position: absolute;
+			bottom: -20%;
+			background-color: black;
+			width: 90px;
+			height: 10px;
+		}
+		.remote {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			gap: 20px;
+			// height: 200px;
+			width: 70%;
+			background-color: #333;
+			border-radius: 30px;
+			padding: 10px 0px 30px;
+			.power-icon {
+				margin-right: 20px;
+				align-self: flex-end;
+				color: white;
+				padding: 4px;
+				border-radius: 50%;
+				background-color: red;
+			}
+			.remote-btn {
+				width: 80%;
+				border: none;
+				padding: 5px 0px;
+				border-radius: 10px;
+				font-size: 16px;
+				background-color: rgba(190, 190, 190);
+				transition: all 0.3s;
+                cursor: pointer;
+			}
+            .active-btn{
+                background-color: white;
+            }
+			// .remote-btn:hover {
+			// 	background-color: rgb(157, 156, 156);
+			// }
+			.remote-btn:active {
+                background-color: white;
+				transform: translateY(2px);
+			}
+
+			@media (min-width: 300px) {
+				width: 180px;
+			}
+			@media (min-width: $bp-large) {
+				align-self: flex-end;
+				.remote-btn {
+					padding: 10px;
+				}
+			}
+		}
+	}
+}

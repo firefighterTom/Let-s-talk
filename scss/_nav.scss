@@ -1,0 +1,128 @@
+.navigation {
+	.burger-icon, .background-navigation {
+		position: fixed;
+		height: 50px;
+		width: 50px;
+		border-radius: 15%;
+		top: 60px;
+		right: 20px;
+		background-color: #d9d9d9;
+		// background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(133,133,133,1) 100%);
+		z-index: 5000;
+		cursor: pointer;
+        @media(min-width:$bp-small){
+            height: 60px;
+		width: 60px;
+        top: 60px;
+		right: 60px;
+        }
+        
+	}
+	.burger-icon{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.btn-burger{
+		
+		
+		width: 40px;
+		height: 6px;
+		background-color: rgb(255, 255, 255);
+		border-radius: 5px;
+		transition: all .3s;
+		z-index: 10000;
+	}
+	.btn-burger::before,.btn-burger::after{
+		content: '';
+		position: absolute;
+		width: 40px;
+		height: 6px;
+		background-color: rgb(255, 255, 255);
+		border-radius: 5px;
+		transition: all .3s;
+	}
+	.btn-burger::before{
+		transform: translateY(16px);
+	}
+	.btn-burger::after{
+		transform: translateY(-16px);
+	}
+	.open{
+		.btn-burger{
+			background: transparent;
+		}
+		.btn-burger::before{
+			transform: rotate(45deg) ;
+		}
+		.btn-burger::after{
+			transform: rotate(-45deg) ;
+		}
+
+	}
+    .background-navigation{
+        background-color: bisque;
+        z-index: 15;
+        
+    }
+    .active{
+       animation: bgc-nav-start 2s forwards;
+    }
+    .dis-active{
+        animation: bgc-nav-close 1s forwards;
+    }
+	nav {
+		height: 100vh;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 200;
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.navigation-list {
+		text-align: center;
+		text-decoration: none;
+	}
+	.navigation-item {
+        display:block;
+		margin-bottom: 30px;
+	}
+	.navigation-item:last-child {
+		margin-bottom: 0;
+	}
+	.navigation-link {
+		font-size: 30px;
+		padding: 10px;
+		border-radius: 10px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #333;
+        transition: all .3s;
+		cursor: pointer;
+	}
+    .navigation-link:hover{
+        color: rgb(255, 255, 255);
+        background-color: #333;
+    }
+}
+
+@keyframes bgc-nav-start{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(80);
+    }
+}
+@keyframes bgc-nav-close{
+    from{
+        transform: scale(80);
+    }
+    to{
+        transform: scale(0);
+    }
+}

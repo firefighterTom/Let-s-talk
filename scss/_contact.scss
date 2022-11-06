@@ -1,0 +1,140 @@
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+	gap: 50px;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+        @media(min-width:$bp-medium){
+            flex-direction: row;
+            gap: 80px;
+         
+        }
+        @media(min-width:$bp-large){
+          
+            gap: 130px;
+         
+        }
+    }
+    
+	.img-box {
+	
+        display: flex;
+       justify-content: flex-end;
+       
+        width: 100%;
+		z-index: 12;
+        @media (min-width:300px){
+        justify-content: center;
+        }
+        @media(min-width:$bp-medium){
+           justify-content: unset;
+           width: unset;
+           order: 1;
+        }
+	}
+    
+    .pos-img{
+        position: relative;
+    }
+	.img-man {
+		margin-top: 60px;
+		width: 200px;
+		height: 200px;
+        @media(min-width:$bp-medium){
+          width: 300px;
+          height: 300px;
+         }
+	}
+    
+	.encourage-to-contact {
+		position: absolute;
+		top: 0;
+		left: -30%;
+        
+        width: 130px;
+		background-color: #fff;
+		padding: 10px;
+
+		border-radius: 120px;
+		box-shadow: 0px 1px 6px black;
+        @media(min-width:$bp-medium){
+            top: 10%;
+            left: -15%;
+         
+        }
+		
+	}
+	.encourage-to-contact:after {
+		content: '';
+		height: 45px;
+		width: 26px;
+		position: absolute;
+		bottom: -38%;
+		right: 18%;
+		transform: rotate(122deg);
+		background-color: #fff;
+        box-shadow: 1px -1px 3px black;
+		z-index: -1;
+	}
+    
+	.box-form {
+		display: flex;
+        width: 60%;
+        max-width: 380px;
+		min-width: 200px;
+		flex-direction: column;
+		background-color: #d9d9d9;
+		padding: 10px 20px;
+		border-radius: 10px;
+        max-width: 380px;
+        
+		label {
+			font-size: 20px;
+			margin: 10px 0px 8px;
+		}
+		input {
+			padding: 10px;
+			border-radius: 10px;
+			border: none;
+		}
+		textarea {
+			padding: 10px;
+			width: 100%;
+			max-width: 100%;
+			font-size: 16px;
+			min-width: 100%;
+			min-height: 80px;
+			max-height: 200px;
+			margin-bottom: 10px;
+			border: none;
+			border-radius: 10px;
+		}
+		.btn-send {
+			align-self: center;
+			padding: 5px 10px;
+			width: 50%;
+			border: none;
+			border-radius: 8px;
+			background-color: black;
+			font-size: 16px;
+			font-weight: bold;
+			color: #fff;
+			transition: all 0.3s;
+            text-align: center;
+			cursor: pointer;
+		}
+		.btn-send:hover {
+			background-color: rgb(41, 41, 41);
+		}
+		.btn-send:active {
+			transform: translateY(3px);
+		}
+	}
+}
