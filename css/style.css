@@ -433,7 +433,7 @@ header {
   font-size: 20px;
 }
 .box-with-all-flags .box-flag:hover {
-  scale: 1.7;
+  scale: 1.3;
 }
 @media (min-width: 768px) {
   .box-with-all-flags {
